@@ -15,6 +15,7 @@ var (
 func main() {
 	flag.Parse()
 
+
 	d:= client.NewPeer2PeerDiscovery("tcp@"+*addr,"")
 	//客户端使用了 Failtry 模式并且随机选择节点。
 	//NewXClient 必须使用服务名称作为第一个参数， 然后是 failmode、 selector、 discovery等其他选项。
